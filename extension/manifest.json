@@ -2,15 +2,19 @@
     "name": "YouTube sticky player",
     "version": "1.0.0",
     "manifest_version": 2,
-    "description": "Sample Chrome Extension",
+    "description": "__MSG_ext_desc__",
+    "homepage_url": "https://github.com/celclow/youtube-sticky-player",
+    "default_locale": "en",
     "content_scripts": [
         {
-            "matches": [
-                "https://www.youtube.com/watch?v=*"
-            ],
-            "css": [
-                "youtube_sticky_player.css"
-            ]
+            "matches": ["https://www.youtube.com/watch?v=*"],
+            "js": ["youtube_sticky_player.js"],
+            "css": ["youtube_sticky_player.css"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+    }
 }

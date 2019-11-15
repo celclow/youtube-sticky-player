@@ -1,18 +1,18 @@
-body {
+body[data-ysp="enable"] {
     overflow: visible !important;
 }
 
-#page-manager {
+body[data-ysp="enable"] #page-manager {
     overflow: visible !important;
 }
 
-#primary-inner > #player {
+body[data-ysp="enable"] #primary-inner > #player {
     position: sticky;
     top: 80px;
     z-index: 100;
 }
 
-#player-theater-container {
+body[data-ysp="enable"] #player-theater-container {
     position: sticky !important;
     top: 56px;
     z-index: 100;
