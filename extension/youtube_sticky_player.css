@@ -1,0 +1,19 @@
+body {
+    overflow: visible !important;
+}
+
+#page-manager {
+    overflow: visible !important;
+}
+
+#primary-inner > #player {
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+}
+
+#player-theater-container {
+    position: sticky !important;
+    top: 56px;
+    z-index: 100;
+}
