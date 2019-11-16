@@ -1,13 +1,13 @@
 {
     "name": "YouTube sticky player",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 2,
     "description": "__MSG_ext_desc__",
     "homepage_url": "https://github.com/celclow/youtube-sticky-player",
     "default_locale": "en",
     "content_scripts": [
         {
-            "matches": ["https://www.youtube.com/watch?v=*"],
+            "matches": ["https://www.youtube.com/*"],
             "js": ["youtube_sticky_player.js"],
             "css": ["youtube_sticky_player.css"]
         }
