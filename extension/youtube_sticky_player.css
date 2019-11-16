@@ -8,12 +8,12 @@ body[data-ysp="enable"] #page-manager {
 
 body[data-ysp="enable"] #primary-inner > #player {
     position: sticky;
-    top: 80px;
-    z-index: 100;
+    top: 56px;
+    z-index: 3000;
 }
 
 body[data-ysp="enable"] #player-theater-container {
     position: sticky !important;
-    top: 56px;
-    z-index: 100;
+    top: 0;
+    z-index: 3000;
 }
