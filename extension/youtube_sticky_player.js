@@ -37,8 +37,8 @@
     button.appendChild(icon);
 
     // insert button
-    //    var controls = document.querySelector(".ytp-right-controls");
-    //controls.insertBefore(button, controls.firstChild);
+    var controls = document.querySelector(".ytp-right-controls");
+    controls.insertBefore(button, controls.firstChild);
 
     // clicked button
     button.onclick = function() {
@@ -53,18 +53,4 @@
         }
     };
 
-    // regist insert button listener
-    // TODO: fix click event to better event
-    document.addEventListener(
-        "click",
-        (function() {
-            return function tryInsertButton() {
-                var controls = document.querySelector(".ytp-right-controls");
-                if (controls) {
-                    controls.insertBefore(button, controls.firstChild);
-                    document.removeEventListener("click", tryInsertButton);
-                }
-            };
-        })()
-    );
 })();
