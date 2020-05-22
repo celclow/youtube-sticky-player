@@ -35,18 +35,6 @@
     button.setAttribute("aria-label", "YouTube sticky player");
     button.setAttribute("title", "YouTube sticky player");
     button.appendChild(icon);
-
-    // insert button
-    const observer = new MutationObserver((mutations) => {
-        var controls = document.querySelector(".ytp-right-controls");
-        if (controls) {
-            controls.insertBefore(button, controls.firstChild);
-            observer.disconnect();
-        }
-    });
-    observer.observe(document, { childList: true, subtree: true });
-
-    // clicked button
     button.onclick = function () {
         if (document.body.dataset.ysp) {
             // enable to disable
@@ -58,4 +46,14 @@
             document.body.dataset.ysp = "enable";
         }
     };
+
+    // insert button
+    const observer = new MutationObserver((mutations) => {
+        var controls = document.querySelector(".ytp-right-controls");
+        if (controls) {
+            controls.insertBefore(button, controls.firstChild);
+            observer.disconnect();
+        }
+    });
+    observer.observe(document, { childList: true, subtree: true });
 })();
