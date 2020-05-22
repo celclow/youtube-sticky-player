@@ -1,4 +1,4 @@
-(function() {
+(function () {
     // create icon
     const xmlns = "http://www.w3.org/2000/svg";
 
@@ -37,11 +37,17 @@
     button.appendChild(icon);
 
     // insert button
-    var controls = document.querySelector(".ytp-right-controls");
-    controls.insertBefore(button, controls.firstChild);
+    var observer = new MutationObserver((mutations) => {
+        var controls = document.querySelector(".ytp-right-controls");
+        if (controls) {
+            controls.insertBefore(button, controls.firstChild);
+            observer.disconnect();
+        }
+    });
+    observer.observe(document, { childList: true, subtree: true });
 
     // clicked button
-    button.onclick = function() {
+    button.onclick = function () {
         if (document.body.dataset.ysp) {
             // enable to disable
             delete document.body.dataset.ysp;
@@ -52,5 +58,4 @@
             document.body.dataset.ysp = "enable";
         }
     };
-
 })();
