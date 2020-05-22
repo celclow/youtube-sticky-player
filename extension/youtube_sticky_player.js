@@ -2,12 +2,12 @@
     // create icon
     const xmlns = "http://www.w3.org/2000/svg";
 
-    var icon = document.createElementNS(xmlns, "svg");
+    const icon = document.createElementNS(xmlns, "svg");
     icon.setAttributeNS(null, "viewBox", "0 0 36 36");
     icon.setAttributeNS(null, "height", "100%");
     icon.setAttributeNS(null, "width", "100%");
 
-    var path1 = document.createElementNS(xmlns, "path");
+    const path1 = document.createElementNS(xmlns, "path");
     path1.setAttributeNS(null, "id", "rect");
     path1.setAttributeNS(
         null,
@@ -16,7 +16,7 @@
     );
     path1.setAttributeNS(null, "fill", "#fff");
 
-    var path2 = document.createElementNS(xmlns, "path");
+    const path2 = document.createElementNS(xmlns, "path");
     path2.setAttributeNS(null, "id", "arrow");
     path2.setAttributeNS(
         null,
@@ -29,7 +29,7 @@
     icon.appendChild(path2);
 
     // create button
-    var button = document.createElement("button");
+    const button = document.createElement("button");
     button.id = "youtube-sticky-player";
     button.classList.add("ytp-button");
     button.setAttribute("aria-label", "YouTube sticky player");
@@ -37,7 +37,7 @@
     button.appendChild(icon);
 
     // insert button
-    var observer = new MutationObserver((mutations) => {
+    const observer = new MutationObserver((mutations) => {
         var controls = document.querySelector(".ytp-right-controls");
         if (controls) {
             controls.insertBefore(button, controls.firstChild);
