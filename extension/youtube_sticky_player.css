@@ -15,5 +15,5 @@ body[data-ysp="enable"] #primary-inner > #player {
 body[data-ysp="enable"] #player-theater-container {
     position: sticky !important;
     top: 0;
-    z-index: 2025;
+    z-index: 2021;
 }
