@@ -1,7 +1,3 @@
-body[data-ysp="enable"] {
-    overflow: visible !important;
-}
-
 body[data-ysp="enable"] #page-manager {
     overflow: visible !important;
 }
