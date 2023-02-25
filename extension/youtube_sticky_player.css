@@ -1,15 +1,3 @@
-/*
-TODO: スクロールバーが表示される原因を潰す
-暫定対応として、ウインドウサイズによってスクロールバーが表示されるので、スクロールバーを非表示としている
-*/
-body[data-ysp="enable"]:not(.style-scope)[standardized-themed-scrollbar]:not(.style-scope):not([no-y-overflow]):not(.style-scope)::-webkit-scrollbar:horizontal {
-    display: none;
-}
-
-body[data-ysp="enable"] #page-manager {
-    overflow: visible !important;
-}
-
 body[data-ysp="enable"] #primary-inner > #player {
     position: sticky;
     top: 56px;
