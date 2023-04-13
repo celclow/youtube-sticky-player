@@ -49,7 +49,7 @@
 
     // insert button
     const observer = new MutationObserver((mutations) => {
-        var controls = document.querySelector(".ytp-right-controls");
+        const controls = document.querySelector("#content .ytp-right-controls");
         if (controls) {
             controls.insertBefore(button, controls.firstChild);
             observer.disconnect();
