@@ -4,7 +4,7 @@ body[data-ysp="enable"] #primary-inner > #player {
     z-index: 2010;
 }
 
-body[data-ysp="enable"] #player-full-bleed-container {
+body[data-ysp="enable"] #full-bleed-container {
     position: sticky !important;
     top: 0;
     z-index: 2021;
