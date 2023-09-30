@@ -49,7 +49,9 @@
 
     // insert button
     const observer = new MutationObserver((mutations) => {
-        const controls = document.querySelector("#content .ytp-right-controls");
+        const controls = document.querySelector(
+            "#content ytd-watch-flexy .ytp-right-controls"
+        );
         if (controls) {
             controls.insertBefore(button, controls.firstChild);
             observer.disconnect();
