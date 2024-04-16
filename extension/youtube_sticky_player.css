@@ -9,3 +9,7 @@ body[data-ysp="enable"] #full-bleed-container {
     top: 0;
     z-index: 2021;
 }
+
+body[data-ysp="enable"] #chat-container {
+    z-index: 2030;
+}
