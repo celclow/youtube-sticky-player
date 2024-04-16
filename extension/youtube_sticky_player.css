@@ -6,6 +6,10 @@ body[data-ysp="enable"] #primary-inner > #player {
 
 body[data-ysp="enable"] #full-bleed-container {
     position: sticky !important;
-    top: 0;
+    top: 56px;
     z-index: 2021;
+}
+
+body[data-ysp="enable"] #chat-container {
+    z-index: 2030;
 }
