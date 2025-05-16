@@ -1,9 +1,15 @@
+/* default mode */
 body[data-ysp="enable"] #primary-inner > #player {
     position: sticky;
     top: 56px;
     z-index: 2010;
 }
 
+body[data-ysp="enable"] #primary-inner > #player > #cinematics-container {
+    display: none;
+}
+
+/* theater mode */
 body[data-ysp="enable"] #full-bleed-container {
     position: sticky !important;
     top: 0px;
