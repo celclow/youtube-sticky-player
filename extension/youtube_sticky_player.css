@@ -1,3 +1,7 @@
+body[data-ysp="enable"] ytd-app {
+    overflow: visible !important;
+}
+
 /* default mode */
 body[data-ysp="enable"] #primary-inner > #player {
     position: sticky;
