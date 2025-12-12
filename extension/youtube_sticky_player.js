@@ -1,21 +1,11 @@
 (function () {
-    const newUi =
-        document.getElementsByClassName("ytp-right-controls-left").length > 0;
-
     // create icon
     const xmlns = "http://www.w3.org/2000/svg";
 
     const icon = document.createElementNS(xmlns, "svg");
     icon.setAttributeNS(null, "viewBox", "0 0 24 24");
-
-    if (newUi) {
-        icon.setAttributeNS(null, "height", "24");
-        icon.setAttributeNS(null, "width", "24");
-    } else {
-        icon.setAttributeNS(null, "height", "100%");
-        icon.setAttributeNS(null, "width", "100%");
-        icon.setAttributeNS(null, "style", "width:60%");
-    }
+    icon.setAttributeNS(null, "height", "24");
+    icon.setAttributeNS(null, "width", "24");
 
     const path1 = document.createElementNS(xmlns, "path");
     path1.setAttributeNS(null, "id", "rect");
